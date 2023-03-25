@@ -22,12 +22,20 @@
   <body>
     <header>
       <div class="banner">
+        <button class="nav-menu__button">
+          <img src="imgs/icon_left-arrow.svg" alt="left banner button" />
+        </button>
         <p>Discover a World of Possibilities with our Pill!</p>
+        <button class="nav-menu__button">
+          <img src="imgs/icon_right-arrow.svg" alt="right banner button" />
+        </button>
       </div>
       <!-- TOPBAR -->
       <div class="topbar">
         <input type="checkbox" name="Menu" id="menu-toggle" />
-        <label class="menu-button-container" for="menu-toggle">≡</label>
+        <label class="menu-button-container" for="menu-toggle">
+          <img src="imgs/icon_menu.svg" alt="icon menu" />
+        </label>
         <div class="menu-button"></div>
         <nav class="nav-menu">
           <ul class="nav-menu">
@@ -39,10 +47,16 @@
             <li class="nav-menu__item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <span>LOGO</span>
+        <a href="#">
+          <img src="imgs/logo_dark-bg-yellow.svg" alt="fluorescen-T logo" />
+        </a>
         <span>
-          <button>user</button>
-          <button>search</button>
+          <button class="nav-menu__button">
+            <img src="imgs/icon_user.svg" alt="icon user" />
+          </button>
+          <button class="nav-menu__button">
+            <img src="imgs/icon_shopping-cart.svg" alt="icon shopping cart" />
+          </button>
         </span>
       </div>
     </header>
@@ -50,7 +64,11 @@
     <!-- MAIN -->
     <main>
       <!-- PILL -->
-      <section id="pill"></section>
+      <section id="pill">
+        <iframe
+          src="https://my.spline.design/untitled-30eca008d9cb6980c45483de8d0ec882/"
+        ></iframe>
+      </section>
 
       <!-- PHRASE -->
       <section id="phrase">
@@ -81,7 +99,7 @@
 
       <!-- SHIPPING -->
       <section id="shipping">
-        <img src="/truck.svg" alt="truck icon" />
+        <img src="imgs/icon_truck.svg" alt="truck icon" />
         <p>Free Shipping on orders over 35€</p>
       </section>
 
