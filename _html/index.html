@@ -38,16 +38,16 @@
         </label>
         <div class="menu-button"></div>
         <nav class="nav-menu">
-          <ul class="nav-menu">
-            <li class="nav-menu__item"><a href="#product">Product</a></li>
-            <li class="nav-menu__item">
-              <a href="#applications">Applications</a>
+          <ul>
+            <li><a class="nav-menu__item" href="#product">Product</a></li>
+            <li>
+              <a class="nav-menu__item" href="#applications">Applications</a>
             </li>
-            <li class="nav-menu__item"><a href="#aboutus">About us</a></li>
-            <li class="nav-menu__item"><a href="#contact">Contact</a></li>
+            <li><a class="nav-menu__item" href="#aboutus">About us</a></li>
+            <li><a class="nav-menu__item" href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <a href="#">
+        <a class="nav-logo" href="#">
           <img src="imgs/logo_dark-bg-yellow.svg" alt="fluorescen-T logo" />
         </a>
         <span>
@@ -69,16 +69,17 @@
           src="https://my.spline.design/untitled-30eca008d9cb6980c45483de8d0ec882/"
           scrolling="no"
         ></iframe>
-        <h2 class="tipe_yellow">FLUORESCEN-T PILL</h2>
-        <p class="tipe_white">
+        <h2 class="type_yellow">FLUORESCEN-T PILL</h2>
+        <p class="type_white">
           Glow up your night with Fluorescen-T <br />the safe and fun way to
           shine bright in the dark!
         </p>
-        <p class="tipe_white">
-          Just for 15’99€ (19’99€) <br />Available in various colors.
+        <p class="type_white">
+          Just for 15'99€ (<span class="text_line-through">19'99€</span>)
+          <br />Available in various colors.
         </p>
         <button class="button_buy-now">BUY NOW!!</button>
-        <p class="tipe_white">Be Fluorescen-T!</p>
+        <p class="type_white">Be Fluorescen-T!</p>
       </section>
 
       <!-- PHRASE -->
@@ -91,7 +92,7 @@
 
       <!-- REVIEWS -->
       <section id="reviews">
-        <h2>Didn't you hear it about us?</h2>
+        <h2>Didn't you hear it <br />about us?</h2>
       </section>
 
       <!-- PETS -->
@@ -133,11 +134,26 @@
           you!
         </p>
         <p>Contact us today and let us know how we can assist you.</p>
-        <input type="text" name="your name" id="name-formulary" />
+        <input
+          type="text"
+          name="your name"
+          value="Your name"
+          id="name-formulary"
+        />
         <label for="name-formulary"></label>
-        <input type="email" name="your@email.com" id="email-formulary" />
+        <input
+          type="email"
+          name="your@email.com"
+          value="your@email.com"
+          id="email-formulary"
+        />
         <label for="email-formulary"></label>
-        <input type="text" name="how could we help you?" id="text-formulary" />
+        <input
+          type="text"
+          name="how could we help you?"
+          value="How could we help you?"
+          id="text-formulary"
+        />
         <label for="text-formulary"></label>
         <button>SEND</button>
       </section>
@@ -145,16 +161,18 @@
 
     <!-- FOOTER -->
     <footer>
-      <img class="logo_white" src="imgs/logo_small.svg" alt="logo F" />
+      <img src="imgs/logo_dark-bg_small.svg" alt="logo fluorescen-T" />
       <p>Be Fluorescen-T</p>
-      <ul>
-        <li>Product</li>
-        <li>Applications</li>
-        <li>About us</li>
-        <li>Contact</li>
+      <div class="footer-line"></div>
+      <ul class="footer-nav">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Applications</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-      <p>Stay connected</p>
-      <ul>
+      <div class="footer-line"></div>
+      <p class="footer-connected">Stay connected</p>
+      <ul class="footer-social">
         <li>
           <a href="https://www.youtube.com/">
             <img src="imgs/icon_youtube.svg" alt="youtube" title="???" />
@@ -181,10 +199,14 @@
           </a>
         </li>
       </ul>
-      <img src="imgs/icon_visa.svg" alt="icon visa" />
-      <img src="imgs/icon_mastercard.svg" alt="icon mastercard" />
-      <img src="imgs/icon_paypal.svg" alt="icon paypal" />
-      <ul>
+      <div class="footer-line"></div>
+      <div class="footer-pay">
+        <img src="imgs/icon_visa.svg" alt="icon visa" />
+        <img src="imgs/icon_mastercard.svg" alt="icon mastercard" />
+        <img src="imgs/icon_paypal.svg" alt="icon paypal" />
+      </div>
+      <div class="footer-line"></div>
+      <ul class="footer-nav-terms">
         <li>
           <a href="#">Terms & conditions</a>
         </li>
@@ -195,7 +217,8 @@
           <a href="#">Cookie policy</a>
         </li>
       </ul>
-      <p>© 2023 Fluorescen-T</p>
+      <div class="footer-line"></div>
+      <p class="footer-copy">© 2023 Fluorescen-T</p>
     </footer>
 
     <script type="module" src="/main.js"></script>
