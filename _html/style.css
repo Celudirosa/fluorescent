@@ -9,6 +9,11 @@ html body {
   height: 100%;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* HEADER */
 
 .banner {
@@ -36,7 +41,6 @@ html body {
   align-items: center;
   justify-content: space-between;
   background-color: #494257;
-  color: #F4F3F4;
   height: 70px;
   padding: 1em;
   position: fixed;
@@ -45,11 +49,12 @@ html body {
   width: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
   z-index: 200;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
 }
 
 nav-menu {
   display: flex;
-  flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -60,12 +65,16 @@ li {
   overflow: hidden;
 }
 
+.nav-menu>ul {
+  display: flex;
+  flex-direction: row;
+}
+
 .menu-button-container {
   display: none;
   height: 100%;
   width: 30px;
   cursor: pointer;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -89,14 +98,8 @@ li {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
   }
 
-  .nav-menu ul {
-    margin: 0;
-    padding: 0;
-  }
-
   .nav-menu__item {
     text-decoration: none;
-    color: #F4F3F4;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
   }
@@ -134,6 +137,11 @@ li {
   .nav-menu>li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+}
+
+.nav-logo:hover {
+  filter: drop-shadow(0px 0px 5px #DDF52F);
+  transition: filter 0.5s ease-in-out;
 }
 
 /* ICONS NAV MENU */
@@ -190,6 +198,7 @@ iframe {
   color: #DDF52F;
   text-shadow: 0px 0px 9px #DDF52F;
   animation: neon 1.5s ease-in-out infinite alternate;
+  transition: transform 0.2s ease;
 }
 
 @keyframes neon {
@@ -202,6 +211,10 @@ iframe {
     text-shadow: 0 0 5px #F4F3F4, 0 0 10px #F4F3F4, 0 0 15px #F4F3F4, 0 0 20px #ddf52f,
       0 0 35px #ddf52f, 0 0 40px #ddf52f, 0 0 50px #ddf52f, 0 0 75px #ddf52f;
   }
+}
+
+.button_buy-now:hover {
+  transform: scale(1.2);
 }
 
 /* PHRASE */
@@ -227,10 +240,34 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 1.5em;
-  height: 440px;
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
+}
+
+.reviews-slider {
+  display: flex;
+}
+
+.reviews-bg {
+  background: #BABFCF;
+  color: #201E2F;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+  width: 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  text-align: start;
+}
+
+.profile-picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 /* PETS */
@@ -240,7 +277,8 @@ iframe {
   color: #F4F3F4;
   display: flex;
   flex-direction: column;
-  padding: 1.5em;
+  align-items: center;
+  padding: 1.5rem;
   height: 260px;
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
@@ -259,7 +297,7 @@ iframe {
 #pets div {
   display: flex;
   align-items: center;
-  gap: 50px;
+
 }
 
 #pets iframe {
@@ -370,8 +408,6 @@ footer {
 }
 
 footer>ul {
-  margin: 0;
-  padding: 0;
   text-align: center;
   list-style: none;
 }

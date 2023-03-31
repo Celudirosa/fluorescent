@@ -6,6 +6,8 @@ Author URI: https://celudirosa.com
 Version: 1.0
 Text Domain: fluor
 */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+/* TIPO */
 body {
   background-color: orange;
 }
