@@ -452,3 +452,10 @@ li>a {
   font-size: 10px;
   margin-top: 25px;
 }
+
+/* ABOUT US */
+
+#about-us,
+#our-values {
+  background-color: #494257;
+}
