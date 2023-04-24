@@ -199,6 +199,7 @@ iframe {
   text-shadow: 0px 0px 9px #DDF52F;
   animation: neon 1.5s ease-in-out infinite alternate;
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 @keyframes neon {
@@ -340,6 +341,11 @@ iframe {
   color: #DDF52F;
   filter: drop-shadow(0px 0px 5px);
   font-weight: bold;
+  cursor: pointer;
+}
+
+#newsletter button:hover {
+  transform: scale(1.1);
 }
 
 /* SHIPPING */
@@ -392,6 +398,11 @@ iframe {
   color: #DDF52F;
   filter: drop-shadow(0px 0px 5px);
   font-weight: bold;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  transform: scale(1.1);
 }
 
 /* FOOTER */
